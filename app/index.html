@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Twitter - Alex Kovry</title>
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,400i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<!-- left column -->
+			<div class="col-md-4">
+				<div class="card mb-3">
+					<div class="profile-bg"></div>
+					<div class="profile-avatar">
+						<img src="img/avatar.jpg" alt="avatar">
+					</div>
+					<div class="card-body">
+						<h2 class="profile-title">Alexandr Kovryzhenko</h2>
+						<div class="profile-description">
+							<p>Front-End Developer</p>
+						</div>
+						<ul class="stats">
+							<li class="stats-item">
+								<b class="stats-title">Tweets</b>
+								<b class="stats-count" id="tweetCounter"></b>
+							</li>
+							<!-- ми зробили наші stats розширяємими, тому за потреби можемо легко добавити додаткові блоки/пункти (все центрується, все чотко): -->
+							<!-- <li class="stats-item">
+								<b class="stats-title">Likes</b>
+								<b class="stats-count">17</b>
+							</li>
+							<li class="stats-item">
+								<b class="stats-title">Repo's</b>
+								<b class="stats-count">7</b>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // left column -->
+			<!-- right column -->
+			<div class="col-md-8">
+				<!-- Make a tweet -->
+				<div class="card mb-3">
+					<div class="card-body">
+						<form id="postNewTweet">
+						  <div class="form-group">
+						    <input type="text" class="form-control" id="tweetText" placeholder="What's new?">
+						  </div>
+						  <button type="submit" class="btn btn-primary">Tweet</button>
+						</form>
+					</div>
+				</div>
+				<!-- // Make a tweet -->
+				<div class="card tweet-card tweet-card-rounded-top">
+					<div class="h4 mb-0">User's tweets</div>
+				</div>
+
+				<!-- Tweets List -->
+				<div id="tweetsList">
+
+					<!-- Single Tweet 
+					<div class="card tweet-card">
+						<div class="tweet-date">07.07.2018</div>
+						<div class="tweet-text font-size-normal"><p>Have idea for my own  twitter-switter.</p></div>
+					</div>
+					 // Single Tweet 
+					 Single Tweet 
+					<div class="card tweet-card">
+						<div class="tweet-date">08.07.2018</div>
+						<div class="tweet-text font-size-small"><p>Write front-end for my own  twitter-switter</p></div>
+					</div>
+					 // Single Tweet 
+					 Single Tweet 
+					<div class="card tweet-card">
+						<div class="tweet-date">09.07.2018</div>
+						<div class="tweet-text font-size-large"><p>Finish front-end for my own  twitter-switter <a href="https://www.youtube.com/">https://www.youtube.com/</a></p></div>
+					</div>
+					 // Single Tweet -->
+
+				</div>
+				<!-- // Tweets List -->
+
+				<!-- Footer -->
+				<footer class="footer">
+					<p class="footer-copyright">&#169; Alexandr Kovryzhenko<br>Developed with <i class="fa fa-heart"></i> in 2018</p>
+				</footer>
+				<!-- // Footer -->
+			</div>
+			<!-- // right column -->
+		</div>
+	</div>
+
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

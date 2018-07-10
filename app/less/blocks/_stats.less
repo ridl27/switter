@@ -1,0 +1,25 @@
+.stats {
+	display: flex;  /* елементи одразу стають в лінію */
+	margin: 0; /* обнуляємо так як ul має відступи за замовчуванням */
+	padding: 0;
+	justify-content: center; /* відцентрували самі stats-item-и */
+	text-align: center; /* відцентрували те, що в stats-item-ах */
+}
+
+.stats-item {
+	display: flex;    /* при перетворенні li в flex - маркер від li сам пропадає */
+	flex-direction: column;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.stats-title {
+	font-size: 14px;
+	color: #8cb0bb;
+}
+
+.stats-count {
+	color: @mainColor;
+	font-size: 22px;
+	font-weight: 600;
+}

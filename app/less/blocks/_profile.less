@@ -1,0 +1,36 @@
+.profile-bg {
+	height: 120px;
+	background-image: url(../img/bg2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; /* шоб картинка займала весь блок */
+	background-position: center;
+}
+
+.profile-avatar {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;  /* шоб ава не вилазила за блок*/
+	border-radius: 100px;
+	margin-top: -50px;
+	border: 4px solid #fff;
+	background-color: #FFF; /* убираємо тонку лінію обводки у авки */
+	margin-left: auto; /* у блочній моделі так добре центрувати елементи */
+	margin-right: auto;
+}
+
+.profile-avatar img {
+	max-width: 100%; /* щоб бачити всю картинку */
+	height: auto; /* щоб висота підбиралася коректно, коли авки сильно широкі або високі, крч підбирає правильні пропорції */
+}
+
+.profile-title {
+	font-size: 22px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.profile-description{
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
+	text-align: center;
+}

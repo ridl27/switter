@@ -1,0 +1,111 @@
+body {
+  background-color: #D5E9ED;
+  font-family: 'Noto Sans', sans-serif;
+  padding-top: 20px;
+}
+.profile-bg {
+  height: 120px;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* шоб картинка займала весь блок */
+  background-position: center;
+}
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  /* шоб ава не вилазила за блок*/
+  border-radius: 100px;
+  margin-top: -50px;
+  border: 4px solid #fff;
+  background-color: #FFF;
+  /* убираємо тонку лінію обводки у авки */
+  margin-left: auto;
+  /* у блочній моделі так добре центрувати елементи */
+  margin-right: auto;
+}
+.profile-avatar img {
+  max-width: 100%;
+  /* щоб бачити всю картинку */
+  height: auto;
+  /* щоб висота підбиралася коректно, коли авки сильно широкі або високі, крч підбирає правильні пропорції */
+}
+.profile-title {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+}
+.profile-description {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  text-align: center;
+}
+.stats {
+  display: flex;
+  /* елементи одразу стають в лінію */
+  margin: 0;
+  /* обнуляємо так як ul має відступи за замовчуванням */
+  padding: 0;
+  justify-content: center;
+  /* відцентрували самі stats-item-и */
+  text-align: center;
+  /* відцентрували те, що в stats-item-ах */
+}
+.stats-item {
+  display: flex;
+  /* при перетворенні li в flex - маркер від li сам пропадає */
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.stats-title {
+  font-size: 14px;
+  color: #8cb0bb;
+}
+.stats-count {
+  color: #087de1;
+  font-size: 22px;
+  font-weight: 600;
+}
+.tweet-card {
+  padding: 1.25rem;
+  border-radius: 0;
+  border-bottom: 0px;
+}
+.tweet-card:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+.tweet-card-rounded-top {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.tweet-date {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.tweet-text p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.tweet-text a {
+  color: #54a7ef;
+}
+.font-size-small p {
+  font-size: 16px;
+}
+.font-size-normal p {
+  font-size: 20px;
+}
+.font-size-large p {
+  font-size: 22px;
+}
+.footer {
+  color: #538994;
+  text-align: center;
+  margin-top: 15px;
+}
+.footer .fa-heart {
+  color: #ce2222;
+}
