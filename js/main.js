@@ -21,7 +21,6 @@ $(document).ready(function(){
 		$('#tweetCounter').text(tweetCounter);
 	}
 
-	// взяли готовий обработчик ссилок https://gist.github.com/ryansmith94/0fb9f6042c1e0af0d74f
 	var wrapURLs = function (text, new_window) {
 	  var url_pattern = /(?:(?:https?|ftp):\/\/)?(?:\S+(?::\S*)?@)?(?:(?!10(?:\.\d{1,3}){3})(?!127(?:\.\d{1,3}){3})(?!169\.254(?:\.\d{1,3}){2})(?!192\.168(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\x{00a1}\-\x{ffff}0-9]+-?)*[a-z\x{00a1}\-\x{ffff}0-9]+)(?:\.(?:[a-z\x{00a1}\-\x{ffff}0-9]+-?)*[a-z\x{00a1}\-\x{ffff}0-9]+)*(?:\.(?:[a-z\x{00a1}\-\x{ffff}]{2,})))(?::\d{2,5})?(?:\/[^\s]*)?/ig;
 	  var target = (new_window === true || new_window == null) ? '_blank' : '';
@@ -37,7 +36,6 @@ $(document).ready(function(){
 		var $tweetBox = $('<div class="card tweet-card">'); 
 		var $tweetDate = $('<div class="tweet-date">').text(date);
 		var $tweetText = $('<div class="tweet-text">').html(wrapURLs(text)).wrapInner('<p></p>');
-		// wrapInner('<p></p>')  бере внутрішній контент блока=div-a (!) і обертає його
 		
 		// робимо текст твітів різного шрифту в залежності від довжини самого твіту
 		var additionalClassName = '';
@@ -59,7 +57,7 @@ $(document).ready(function(){
 		countTweets();
 	}
 
-	// Створюємо базу твітів (виносимо їх з html кода) у вигляді масива об'єктів
+	// Створюємо базу твітів у вигляді масива об'єктів
 	var tweetsBase = [
 		{
 			date: '07.07.2018',
@@ -81,12 +79,10 @@ $(document).ready(function(){
 
 	// Добавлення нового твіта на сторінку
 	$('#postNewTweet').on('submit', function(e){
-		e.preventDefault(); // шоби сторінка не обновлювалася
+		e.preventDefault(); 
 		var tweetText = $('#tweetText').val();
 		createTweet(getDate(), tweetText);
-		$('#tweetText').val(''); // очищаємо поле після добавлення твіта
+		$('#tweetText').val(''); 
 	});
 
 });
-
-// console.log();

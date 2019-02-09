@@ -8,28 +8,22 @@ body {
   background-image: url(../img/bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* шоб картинка займала весь блок */
   background-position: center;
 }
 .profile-avatar {
   width: 90px;
   height: 90px;
   overflow: hidden;
-  /* шоб ава не вилазила за блок*/
   border-radius: 100px;
   margin-top: -50px;
   border: 4px solid #fff;
   background-color: #FFF;
-  /* убираємо тонку лінію обводки у авки */
   margin-left: auto;
-  /* у блочній моделі так добре центрувати елементи */
   margin-right: auto;
 }
 .profile-avatar img {
   max-width: 100%;
-  /* щоб бачити всю картинку */
   height: auto;
-  /* щоб висота підбиралася коректно, коли авки сильно широкі або високі, крч підбирає правильні пропорції */
 }
 .profile-title {
   font-size: 22px;
@@ -43,18 +37,13 @@ body {
 }
 .stats {
   display: flex;
-  /* елементи одразу стають в лінію */
   margin: 0;
-  /* обнуляємо так як ul має відступи за замовчуванням */
   padding: 0;
   justify-content: center;
-  /* відцентрували самі stats-item-и */
   text-align: center;
-  /* відцентрували те, що в stats-item-ах */
 }
 .stats-item {
   display: flex;
-  /* при перетворенні li в flex - маркер від li сам пропадає */
   flex-direction: column;
   padding-left: 25px;
   padding-right: 25px;
